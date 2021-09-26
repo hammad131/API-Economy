@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const item_1 = require("./item");
-let item = new item_1.Item(11, 'task1', true);
-item.printTask();
+const itemCollection_1 = require("./itemCollection");
+let icollection = new itemCollection_1.ItemCollection();
+icollection.addTodo("pay bill");
+icollection.taskDone(1);
+icollection.printAll();
